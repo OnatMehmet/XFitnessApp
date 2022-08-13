@@ -3,16 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NLayer.Web</title>
+    <title>@ViewData["Title"] - ForBEST</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NLayer.Web.styles.css" asp-append-version="true" />
 </head>
 <body>
 
-    Header
-    <header>
-  @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4"></span><h2><b>ForBEST</b></h2>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Anasayfa</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Kadromuz</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Hizmetlerimiz</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">SSS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Biz Kimiz?</a></li>
+      </ul>
+
+       <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Giriş</button>
+        <button type="button" class="btn btn-primary">Yeni Kayıt</button>
+      </div>
+    </header>
+
+  <div class="carousel-item">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+  </div>
+
+ 
+   @*    <header>
+     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NLayer.Web</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -30,10 +63,10 @@
                     </ul>
                 </div>
             </div>
-        </nav>*@
+        </nav>
+    </header>*@
 
 
-    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
